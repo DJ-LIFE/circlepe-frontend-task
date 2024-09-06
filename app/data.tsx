@@ -30,7 +30,7 @@ export const screens: Screens = {
                    <h1 className='text-description-heading'>Tenant selects the property</h1>
                    <h1 className='text-description-white'>Tenant selects flexible rent tenure & corresponding amount</h1>
                 </div>,
-    image: 'screenShot1',
+    image: '/screenShot1.png',
     slider: '20%',
     img_layout: 'top-1/3 md:scale-[1.4] max-md:scale-[1.2] max-md:translate-y-1/4',
     arrow: 'top-1/4 right-[80%]'
@@ -81,7 +81,7 @@ export const screens: Screens = {
                         <li>Zero cost EMI = Monthly Rent</li>
                     </ul>
                 </div>,
-    image:'/screenShot5',
+    image:'/screenShot5.png',
     slider: '100%',
     img_layout:'-top-[1%] md:scale-[1.1]',
     arrow:'top-[58%] right-[73%] ',
