@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# CirclePe Front-End Development Assignment
 
-First, run the development server:
+## Technologies Used
+- **React**: A JavaScript library for building user interfaces. The project utilizes functional components and hooks for managing state and lifecycle methods.
+- **TypeScript**: Adds static typing to JavaScript, helping catch errors during development and improving code quality.
+- **Tailwind CSS**: A utility-first CSS framework that allows for responsive design with minimal effort. It is used for styling the components and ensuring a modern look.
+- **JavaScript ES6+**: Utilizes modern JavaScript features such as arrow functions, destructuring, and async/await for cleaner and more efficient code.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Features
+- **Responsive Design**: The component changes its layout based on the screen size. Mobile and desktop versions are implemented using media queries.
+- **Keyboard Interaction**: Users can toggle the slider using the spacebar, making it accessible and enhancing user experience.
+- **Auto Slide Functionality**: The slider automatically transitions between slides every 2 seconds, with the functionality to pause on user interaction.
+
+## Challenges Faced
+1. **State Management**:
+   - **Challenge**: Managing the state of the current index for the slider and the toggle state for pause/resume functionality required careful consideration.
+   - **Solution**: Utilized React's `useState` hook to maintain the slider's index and the pause state effectively. 
+
+2. **Responsive Design**:
+   - **Challenge**: Ensuring the component is visually appealing and functional across various screen sizes was initially challenging.
+   - **Solution**: Employed Tailwind CSS utility classes to manage responsive layouts consistently across mobile and desktop screens.
+
+3. **Keyboard Accessibility**:
+   - **Challenge**: Implementing keyboard control for the slider without interfering with other interactions.
+   - **Solution**: A keydown event listener was implemented using the `useEffect` hook to toggle the slider state when the spacebar is pressed.
+
+4. **CSS Transition Effects**:
+   - **Challenge**: Creating smooth transitions for the slider animations while ensuring they are performant across devices.
+   - **Solution**: Explored and implemented various CSS properties like `transition`, `opacities`, and `transform` to facilitate smooth animations.
+
+## Installation
+To set up the project locally:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/DJ-LIFE/circlepe-frontend-task.git
+   cd my-app
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Run the application**:
+   ```bash
+   npm run dev
+   ```
+
+## Usage
+component can be integrated into your project by importing it and passing the appropriate data structure as props.
+
+```javascript
+import Home from './path/to/Home';
 ```
+Open http://localhost:3000 with your browser to launch.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment
+View live Project on vercel  [Link].
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Feel free to modify and adapt the project to suit your needs!
