@@ -57,6 +57,6 @@ import Home from './path/to/Home';
 Open http://localhost:3000 with your browser to launch.
 
 ## Deployment
-View live Project on vercel  [Link].
+View live Project on vercel  [Link](https://circlepe-frontend-task.vercel.app/).
 
 Feel free to modify and adapt the project to suit your needs!
