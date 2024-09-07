@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 // import localFont from "next/font/local";
 import "./globals.css";
-import { League_Spartan } from 'next/font/google';
+import { League_Spartan } from "next/font/google";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -13,10 +13,10 @@ import { League_Spartan } from 'next/font/google';
 //   variable: "--font-geist-mono",
 //   weight: "100 900",
 // });
-const LeagueSpartan = League_Spartan({
+export const LeagueSpartan = League_Spartan({
   subsets: ['latin'],
   display: 'swap',
-});
+})
 
 export const metadata: Metadata = {
   title: "Circlepe FrontEnd Assignment",
