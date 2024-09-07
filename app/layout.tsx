@@ -9,6 +9,7 @@ const leagueSpartan = League_Spartan({
 });
 
 
+
 export const metadata: Metadata = {
   title: "Circlepe FrontEnd Assignment",
   description: "Circlepe Frontend Development Assignment",
@@ -22,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`antialiased ${leagueSpartan.className}`}>
+      <body className={`antialiased ${leagueSpartan.style}`}>
         {children}
       </body>
     </html>
