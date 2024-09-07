@@ -60,7 +60,7 @@ export const screens: Screens = {
     image:'/screenShot3.png',
     slider: '60%',
     img_layout:'md:-translate-y-[21%] md:scale-[1.5]',
-    arrow:'top-[55%] right-[75%] md-scale-[1.1]',
+    arrow:'top-[40%] right-[70%] md-scale-[1.1]',
     arrow_additional :{transform:'rotateX(180deg) rotateZ(-40deg)'}
 },
 4:{
